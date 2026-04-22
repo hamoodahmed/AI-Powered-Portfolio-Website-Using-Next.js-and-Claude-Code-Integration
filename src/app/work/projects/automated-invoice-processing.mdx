@@ -1,0 +1,31 @@
+---
+title: "Automated Invoice Processing with AI"
+publishedAt: "2024-12-10"
+summary: "An intelligent document processing system that extracts, validates, and reconciles invoices automatically using Claude Vision and OCR."
+images:
+  - "https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?q=80&w=2000"
+  - "https://images.unsplash.com/photo-1634733988138-bf2c3a2a13fa?q=80&w=2000"
+team:
+  - name: "Hamood Ahmed"
+    role: "AI Engineer"
+    avatar: "/images/personal/hamood-main.jpg"
+---
+
+## Overview
+Developed for a finance department processing 500+ invoices monthly. The system uses Claude Vision to read invoices in any format (PDF, images, scanned documents) and automatically enters data into the ERP.
+
+## Key Features
+- **Multi-Format Support**: Handles PDFs, JPEGs, PNGs, and even handwritten invoices.
+- **Smart Validation**: Cross-checks invoice data against purchase orders and flags discrepancies.
+- **Auto-Reconciliation**: Matches payments with invoices and updates accounting records.
+
+## Technical Stack
+- **AI**: Claude 3.5 Sonnet (Vision API)
+- **OCR**: Tesseract + Custom preprocessing
+- **Backend**: Python, Celery for async processing
+- **Integration**: REST APIs to connect with QuickBooks and ERPNext
+
+## Business Impact
+- 90% reduction in manual data entry time
+- 99.5% accuracy in data extraction
+- Processing time reduced from 2 hours to 5 minutes per batch

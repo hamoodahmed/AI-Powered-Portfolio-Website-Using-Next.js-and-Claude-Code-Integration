@@ -2,48 +2,33 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  firstName: "Hamood",
+  lastName: "Ahmed",
+  name: `Hamood Ahmed`,
+  role: "Agentic AI & Full Stack Engineer",
+  avatar: "/images/personal/hamood-main.jpg",
+  email: "hamood.dev@outlook.com",
+  location: "Asia/Karachi",
+  languages: ["English", "Urdu"],
 };
 
 const newsletter: Newsletter = {
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>Updates on Agentic AI, Claude Code, and Full Stack Development</>,
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  // Set essentials: true for links you want to show on the about page
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/hamoodahmed",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/hamood-ahmed-a34748213/",
     essential: true,
   },
   {
@@ -59,25 +44,25 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  description: `Portfolio website showcasing my work as an ${person.role}`,
+  headline: <>Architecting Autonomous Systems & Scalable Web Solutions</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Featured Work</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Agentic AI ERP
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/agentic-ai-erp-integration",
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-</>
+      I'm Hamood, a <Text as="span" size="xl" weight="strong">Full Stack Developer</Text> specialized in <Text as="span" size="xl" weight="strong">Agentic AI</Text>. I build autonomous agents with Claude, scalable ERP systems with Python/Frappe, and high-performance applications with Next.js.
+    </>
   ),
 };
 
@@ -95,59 +80,69 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/hamoodahmed",
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "My Journey",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        My professional path is a unique blend of creativity and engineering. I started as a **Graphic & UI Designer**, which gave me a deep appreciation for user experience and aesthetics. However, my curiosity about how things work under the hood led me to pursue a **Bachelor's in Computer Science at Iqra University**.
+        <br /><br />
+        A defining chapter of my career was joining the **PIAIC (Presidential Initiative for Artificial Intelligence and Computing)**, where I specialized in **Agentic AI and Robotic Engineering**. This experience transformed my approach to software, moving from building static applications to architecting autonomous "Agentic" systems that can reason and execute complex tasks.
+        <br /><br />
+        Today, I bridge the gap between robust Full Stack development and cutting-edge AI, delivering solutions that are not just functional but intelligent.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "KCompute (Pvt) Ltd.",
+        timeframe: "Mar 2023 - Dec 2025",
+        role: "Full-stack Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Developed and scaled web applications using ASP.NET Web API, JavaScript, and modern frontend frameworks, ensuring high performance and responsiveness.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Implemented Generative AI solutions using OpenAI and Claude-based tools to automate internal workflows and enhance product capabilities.
+          </>,
+          <>
+            Integrated third-party services and managed complex PostgreSQL/SQL databases, maintaining 99.9% system uptime for client applications.
+          </>,
+          <>
+            Applied DevOps best practices including Docker, Jenkins, and Kubernetes for seamless CI/CD pipeline management.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Codes Soft",
+        timeframe: "Apr 2025 - Jul 2025",
+        role: "Python ERP Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed custom ERP solutions using the Frappe framework and ERPNext, creating complex doctypes and dynamic reports.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Designed custom print formats and built intuitive pages to meet specific business process requirements for international clients.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Credential Business Solutions",
+        timeframe: "Feb 2020 - Mar 2021",
+        role: "Graphic & UI Designer",
+        achievements: [
+          <>
+            Created comprehensive branding packages, UI elements, and social media designs using Figma and Adobe Creative Suite.
+          </>,
+          <>
+            Focused on clean, user-friendly design principles to improve user engagement and brand consistency.
           </>,
         ],
         images: [],
@@ -155,78 +150,73 @@ const about: About = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Iqra University (IU), Pakistan",
+        description: (
+          <>
+            **Bachelor's in Computer Science (2020 - 2025)**<br />
+            CGPA: 3.25. Focused on AI and Machine Learning. Final Year Project: AI-based ML system for detecting hairfall-related diseases.
+          </>
+        ),
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "PIAIC",
+        description: <>Specialization in Agentic AI and Robotic Engineering (Quarter 1).</>,
+      },
+      {
+        name: "Adamjee Government Science College",
+        description: <>Intermediate in Pre-Engineering.</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Expertise",
     skills: [
       {
-        title: "Figma",
+        title: "Agentic AI & Automation",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Building autonomous systems and multi-agent workflows using cutting-edge AI frameworks.</>
         ),
         tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
+          { name: "Claude Code", icon: "claude" },
+          { name: "LangGraph", icon: "python" },
+          { name: "n8n Automation", icon: "workflow" },
+          { name: "Generative AI", icon: "ai" },
+          { name: "Python", icon: "python" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Next.js",
+        title: "Full Stack Development",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Developing scalable web applications with modern frameworks and robust backends.</>
         ),
         tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
+          { name: "Next.js", icon: "nextjs" },
+          { name: "TypeScript", icon: "typescript" },
+          { name: "ASP.NET Web API", icon: "csharp" },
+          { name: "PostgreSQL", icon: "postgresql" },
+          { name: "Tailwind CSS", icon: "tailwindcss" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+        images: [],
+      },
+      {
+        title: "DevOps & ERP",
+        description: (
+          <>Managing infrastructure and specialized business systems.</>
+        ),
+        tags: [
+          { name: "Docker", icon: "docker" },
+          { name: "Kubernetes", icon: "kubernetes" },
+          { name: "ERPNext", icon: "python" },
+          { name: "Frappe", icon: "python" },
+          { name: "CI/CD", icon: "jenkins" },
         ],
+        images: [],
       },
     ],
   },
@@ -259,43 +249,43 @@ const gallery: Gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
+      src: "/images/personal/hamood-main.jpg",
+      alt: "Hamood Ahmed - Agentic AI Specialist",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
+      src: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000",
+      alt: "AI Neural Network Concept",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
+      src: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000",
+      alt: "Clean Code Implementation",
+      orientation: "horizontal",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2000",
+      alt: "Robotic Process Automation",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
+      src: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000",
+      alt: "Advanced Technology Hardware",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
+      src: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2000",
+      alt: "Cybersecurity & Data Protection",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
+      src: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2000",
+      alt: "Modern Workspace Setup",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
+      src: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=2000",
+      alt: "Development Environment",
       orientation: "vertical",
     },
   ],
