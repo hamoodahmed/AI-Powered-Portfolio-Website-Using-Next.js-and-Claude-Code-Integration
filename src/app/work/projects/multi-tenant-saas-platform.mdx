@@ -1,33 +1,41 @@
 ---
-title: "Multi-Tenant SaaS Platform for SMEs"
-publishedAt: "2024-09-20"
-summary: "A scalable SaaS platform built with Next.js and PostgreSQL, serving 100+ small businesses with custom workflows and white-label branding."
-images:
-  - "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000"
-  - "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000"
-team:
-  - name: "Hamood Ahmed"
-    role: "Full Stack Developer"
-    avatar: "/images/personal/hamood-main.jpg"
+title: "Multi-Tenant SaaS Platform"
+description: "A complete multi-tenant SaaS platform with team management and role-based access"
+date: "2024-01-15"
+tags: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Stripe"]
+image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2000"
 ---
 
 ## Overview
-Built a multi-tenant SaaS application that allows small businesses to manage their operations (CRM, invoicing, inventory) from a single platform. Each tenant gets isolated data and custom branding.
+
+Built a production-ready multi-tenant SaaS platform from scratch, handling user authentication, team management, and subscription billing.
 
 ## Key Features
-- **True Multi-Tenancy**: Row-level security in PostgreSQL ensures complete data isolation.
-- **White-Label Branding**: Each business can customize colors, logos, and domain names.
-- **Role-Based Access Control**: Granular permissions for team members.
-- **API-First Architecture**: RESTful APIs allow third-party integrations.
+
+- **Multi-tenancy**: Isolated data per organization with shared infrastructure
+- **Team Management**: Invite members, assign roles, manage permissions
+- **Subscription Billing**: Stripe integration for recurring payments
+- **Role-Based Access**: Granular permissions for different user types
+- **Audit Logs**: Track all user actions across the platform
 
 ## Technical Stack
-- **Frontend**: Next.js 15, Tailwind CSS, Shadcn UI
-- **Backend**: Node.js, tRPC for type-safe APIs
-- **Database**: PostgreSQL with Row-Level Security (RLS)
-- **Auth**: NextAuth.js with JWT
-- **Deployment**: Vercel (Frontend), Railway (Backend)
 
-## Business Impact
-- Serving 100+ active businesses
-- 99.9% uptime over 6 months
-- Average page load time: <1 second
+- **Frontend**: Next.js 16 with App Router and TypeScript
+- **Database**: PostgreSQL with Prisma ORM
+- **Authentication**: NextAuth.js with Google and email providers
+- **Payments**: Stripe Connect for subscription management
+- **Styling**: Once UI System with Tailwind CSS
+- **Deployment**: Vercel with edge caching
+
+## Challenges Solved
+
+1. **Data Isolation**: Implemented row-level security patterns to ensure tenant data never leaks
+2. **Subscription Sync**: Webhook system to keep Stripe and database in sync
+3. **Performance**: Optimized database queries for multi-tenant data access patterns
+4. **Onboarding Flow**: Seamless team creation and invitation system
+
+## Results
+
+- **Time to market**: 6 weeks from concept to launch
+- **Scalability**: Supports 500+ concurrent tenants
+- **User satisfaction**: 95% positive feedback on team management features
